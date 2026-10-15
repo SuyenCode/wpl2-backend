@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfTeam12.SqlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTeam12"
+        mc:Ignorable="d"
+        Title="SqlWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <WrapPanel>
+                <Label Content="Server:" Width="100"></Label>
+                <TextBox Name="TxtServer" Width="200" Margin="5"></TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <Label Content="Database:" Width="100"></Label>
+                <TextBox Name="TxtDb" Width="200" Margin="5"></TextBox>
+            </WrapPanel>
+            <Button x:Name="BtnConnect" Content="Connect" Width="100" Click="BtnConnect_Click"></Button>
+            <WrapPanel>
+                <Label Content="Table:" Width="100"></Label>
+                <TextBox Name="TxtTable" Width="200" Margin="5"></TextBox>
+            </WrapPanel>
+            <Button x:Name="BtnGetData" Content="Get Data" Click="BtnGetData_Click" Width="100" Height="20"/>
+            <DataGrid x:Name="DgdSql" Width="350" Height="250"></DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
